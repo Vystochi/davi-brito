@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "nDaviBrito+",
+  "version": "1.0",
+  "description": "Substitui todas as imagens por imagens do Nicolas Cage.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
